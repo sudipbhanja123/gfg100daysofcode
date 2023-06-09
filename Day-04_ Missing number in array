@@ -1,0 +1,17 @@
+// User function Template for Java
+
+class Solution 
+{
+    int MissingNumber(int array[], int n)
+    {
+        int sumOfarr=0;
+        int sumOfn=n*(n+1)/2;
+        for(int i=0;i<array.length;i++)
+        {
+            sumOfarr=sumOfarr+array[i];
+        }
+        int missing=sumOfn-sumOfarr;
+        
+        return missing;
+    }
+}
